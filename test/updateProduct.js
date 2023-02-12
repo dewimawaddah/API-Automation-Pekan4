@@ -11,7 +11,7 @@ describe("Kasir Aja API Product", () => {
 
     //start positive
     const updateProductResponse = await request
-      .put("/products/53c9fecb-c1f7-4bad-b8a5-9de5bfae4485")
+      .put("/products/fbeaf21c-141f-4a96-bbcf-18c6745a72a3")
       .send({
         category_id: "811f547e-a24e-4f94-bfe1-b7ed7d11c030",
         code: "A314ASDDFIER3452",

@@ -8,7 +8,7 @@ describe("Kasir Aja API Product", () => {
       password: "123yayaya",
     });
     const token = response.body.data.accessToken;
-    const getProductDetailResponse = await request.get("/products/53c9fecb-c1f7-4bad-b8a5-9de5bfae4485").auth(token, { type: "bearer" });
+    const getProductDetailResponse = await request.get("/products/fbeaf21c-141f-4a96-bbcf-18c6745a72a3").auth(token, { type: "bearer" });
     expect(getProductDetailResponse.body.status).to.eql("success");
     expect(getProductDetailResponse.body.data.product.code).to.eql("A314ASDDFIER3452");
     expect(getProductDetailResponse.body.data.product.name).to.eql("Yakult");

@@ -8,7 +8,7 @@ describe("Kasir Aja API Product", () => {
       password: "123yayaya",
     });
     const token = response.body.data.accessToken;
-    const getProductDeleteResponse = await request.delete("/products/5cadf7da-15fa-4848-98f6-3d86b0ebe643").auth(token, { type: "bearer" });
+    const getProductDeleteResponse = await request.delete("/products/fbeaf21c-141f-4a96-bbcf-18c6745a72a3").auth(token, { type: "bearer" });
     expect(getProductDeleteResponse.body.status).to.eql("success");
     expect(getProductDeleteResponse.body.message).to.eql("Product berhasil dihapus");
   });
