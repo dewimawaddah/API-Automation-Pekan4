@@ -9,6 +9,6 @@ describe("Kasir Aja API Product", () => {
     });
     const token = response.body.data.accessToken;
     const getProductListResponse = await request.get("/products").auth(token, { type: "bearer" });
-    expect(getProductListResponse.status).to.eql(200);
+    expect(getProductListResponse.body.status).to.eql("success");
   });
 });
